@@ -10,7 +10,7 @@ import {
 import FavoriteButton from '../components/favButton'
 import { getMovieDetail } from '../API'
 
-export default MovieScreen = ({ navigation, route }) => {
+export default ({ navigation, route }) => {
   const id = route.params.id
   const [detail, setDetail] = useState({})
   useEffect(() => {
@@ -50,7 +50,8 @@ const styles = StyleSheet.create({
   desc: {
     flex: 1,
     justifyContent: 'flex-end',
-    marginBottom: 20
+    marginBottom: 20,
+    opacity: 1
   },
   poster: {
     flex: 1,

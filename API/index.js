@@ -1,7 +1,7 @@
 import axios from 'axios'
 
-const apiKey = 'd68961c3e68bd09ba6d147a660f87d27'
-const url = 'https://api.themoviedb.org/3'
+const apiKey = process.env.API_KEY
+const url = process.env.API_HOST
 
 const fetchData = async option => {
   try {

@@ -38,11 +38,12 @@ const FavoriteStackScreen = () => (
 
 export default () => {
   return (
-    <Tab.Navigator initialRouteName='Home' activeColor='#e91e63'>
+    <Tab.Navigator initialRouteName='Home' activeColor='#3C3C3C' shifting>
       <Tab.Screen
         name='Home'
         component={HomeStackScreen}
         options={{
+          tabBarColor: '#9FC2A8',
           tabBarIcon: ({ color }) => (
             <MaterialCommunityIcons
               name='library-movie'
@@ -56,6 +57,7 @@ export default () => {
         name='Search'
         component={SearchStackScreen}
         options={{
+          tabBarColor: '#9EDEDB',
           tabBarIcon: ({ color }) => (
             <MaterialCommunityIcons
               name='image-search'
@@ -69,6 +71,7 @@ export default () => {
         name='Favorites'
         component={FavoriteStackScreen}
         options={{
+          tabBarColor: '#F9C242',
           tabBarIcon: ({ color }) => (
             <MaterialCommunityIcons name='star' color={color} size={26} />
           )

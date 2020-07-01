@@ -3,7 +3,7 @@ import { SafeAreaView, StyleSheet } from 'react-native'
 import MovieList from '../components/movieList'
 import { getNowPlaying } from '../API'
 
-export default HomeScreen = ({ navigation }) => {
+export default ({ navigation }) => {
   const [movies, setMovies] = useState([])
   useEffect(() => {
     const fetchMovies = async () => {

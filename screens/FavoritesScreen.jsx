@@ -8,10 +8,10 @@ const mapStateToProps = state => ({
   favorites: state.favorites
 })
 
-const FavoritesScreen = ({ favorites }) => {
+const FavoritesScreen = ({ favorites, navigation }) => {
   return (
-    <View style={{ flex: 1 }}>
-      <MovieList movies={favorites} />
+    <View style={{ flex: 1, marginTop: 10 }}>
+      <MovieList movies={favorites} navigation={navigation} />
     </View>
   )
 }
